@@ -49,7 +49,7 @@ export default function AboutPage({ navigation }) {
               <Button title="Home Page" onPress={() => navigation.navigate('Home')}></Button>
             </View>
             <View style={styles.buttonItems}>
-              <Button title="Items Page" onPress={() => navigation.navigate('Item')}></Button>
+              <Button title="Owners List" onPress={() => navigation.navigate('Owners')}></Button>
             </View>
           </View>
         </View>
