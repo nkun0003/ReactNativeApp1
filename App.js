@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Button, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import HomePage from './pages/HomePage';
 import CarPage from './pages/CarPage';
-import ItemsPage from './pages/ItemsPage';
+import OwnersPage from './pages/OwnersPage';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -14,7 +14,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="About" component={CarPage} />
-        <Stack.Screen name="Item" component={ItemsPage} />
+        <Stack.Screen name="Owners" component={OwnersPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

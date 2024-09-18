@@ -67,7 +67,9 @@ const styles = StyleSheet.create({
     // paddingTop: 48,
   },
   buttonsContainer: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 5
   },
   buttonHome: {
     padding: 5,
@@ -75,6 +77,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightblue'
   },
   buttonItems: {
-    padding: 5
+    padding: 5,
+    borderRadius: 10,
+    backgroundColor: 'lightblue'
   }
 });
