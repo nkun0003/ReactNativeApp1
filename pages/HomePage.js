@@ -6,12 +6,14 @@ export default function HomePage({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text> Ross's First React Native App</Text>
-        <View style={styles.buttonAbout}>
-          <Button title="Cars Page" onPress={() => navigation.navigate('Cars')}></Button>
-        </View>
-        <View style={styles.buttonItems}>
-          <Button title="Owners List" onPress={() => navigation.navigate('Owners')}></Button>
+        <View style={styles.buttonStyle}>
+          <Text> Ross's First React Native App</Text>
+          <View style={styles.buttonAbout}>
+            <Button title="Cars Page" onPress={() => navigation.navigate('Cars')}></Button>
+          </View>
+          <View style={styles.buttonItems}>
+            <Button title="Owners List" onPress={() => navigation.navigate('Owners')}></Button>
+          </View>
         </View>
 
         <StatusBar style="auto" />
@@ -28,10 +30,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
     // paddingTop: 48,
   },
+  buttonStyle: {
+    justifyContent: 'space-between',
+    padding: 5,
+    flexDirection: 'column',
+    gap: 5
+  },
   buttonAbout: {
+    borderRadius: 10,
+    backgroundColor: 'lightblue',
     padding: 5
   },
   buttonItems: {
+    borderRadius: 10,
+    backgroundColor: 'lightblue',
     padding: 5
   }
 });
