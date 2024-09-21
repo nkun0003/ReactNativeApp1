@@ -1,6 +1,6 @@
 import { SafeAreaView, StyleSheet, Text, View, Image, ScrollView, Button } from 'react-native';
 
-export default function AboutPage({ navigation }) {
+export default function CarPage({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>

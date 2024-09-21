@@ -8,10 +8,10 @@ export default function HomePage({ navigation }) {
       <View>
         <Text> Ross's First React Native App</Text>
         <View style={styles.buttonAbout}>
-          <Button title="Cars Page" onPress={() => navigation.navigate('About')}></Button>
+          <Button title="Cars Page" onPress={() => navigation.navigate('Cars')}></Button>
         </View>
         <View style={styles.buttonItems}>
-          <Button title="Owners List" onPress={() => navigation.navigate('Item')}></Button>
+          <Button title="Owners List" onPress={() => navigation.navigate('Owners')}></Button>
         </View>
 
         <StatusBar style="auto" />
