@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Button, FlatList, SafeAreaView, StyleSheet, Text, View, Pressable } from 'react-native';
 
 export default function ListPage({ navigation }) {
   return (
@@ -7,15 +7,18 @@ export default function ListPage({ navigation }) {
       <FlatList
         data={data}
         renderItem={({ item }) => (
-          <Text
-            style={{
-              padding: 16,
-              fontSize: 20,
-              backgroundColor: 'aqua',
-              margin: 2
-            }}>
-            {item.title}
-          </Text>
+          <Pressable onPress={() => alert('User is selected.')}>
+            <Text
+              style={{
+                padding: 16,
+                fontSize: 20,
+                backgroundColor: 'blue',
+                margin: 2,
+                color: 'white'
+              }}>
+              {item.title}
+            </Text>
+          </Pressable>
         )}
         keyExtractor={(item) => item.id}
       />
@@ -34,87 +37,59 @@ export default function ListPage({ navigation }) {
 const data = [
   {
     id: '1',
-    title: 'Item 1'
+    title: 'Smith'
   },
   {
     id: '2',
-    title: 'Item 2'
+    title: 'John'
   },
   {
     id: '3',
-    title: 'Item 3'
+    title: 'Sarah'
   },
   {
     id: '4',
-    title: 'Item 4'
+    title: 'Ross'
   },
   {
     id: '5',
-    title: 'Item 5'
+    title: 'Kate'
   },
   {
     id: '6',
-    title: 'Item 6'
+    title: 'Jossy'
   },
   {
     id: '7',
-    title: 'Item 7'
+    title: 'Pierre'
   },
   {
     id: '8',
-    title: 'Item 8'
+    title: 'Katie'
   },
   {
     id: '9',
-    title: 'Item 9'
+    title: 'Ross'
   },
   {
     id: '10',
-    title: 'Item 10'
+    title: 'Sephy'
   },
   {
     id: '11',
-    title: 'Item 11'
+    title: 'Kenan'
   },
   {
     id: '12',
-    title: 'Item 12'
+    title: 'Treah'
   },
   {
     id: '13',
-    title: 'Item 13'
+    title: 'Jack'
   },
   {
     id: '14',
-    title: 'Item 14'
-  },
-  {
-    id: '15',
-    title: 'Item 15'
-  },
-  {
-    id: '16',
-    title: 'Item 16'
-  },
-  {
-    id: '17',
-    title: 'Item 17'
-  },
-  {
-    id: '18',
-    title: 'Item 18'
-  },
-  {
-    id: '19',
-    title: 'Item 19'
-  },
-  {
-    id: '20',
-    title: 'Item 20'
-  },
-  {
-    id: '21',
-    title: 'Item 21'
+    title: 'Gedeon'
   }
 ];
 const styles = StyleSheet.create({
